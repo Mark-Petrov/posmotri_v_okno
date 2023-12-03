@@ -21,6 +21,7 @@ html {
 
   display: flex;
   justify-content: center;
+  align-items:center;
 }
 
 h1,
@@ -45,7 +46,6 @@ ol {
 .content{
   display: flex;
   gap:30px;
-  height: 800px;
   padding: 133px 30px;
 }
 
@@ -56,13 +56,13 @@ ol {
 }
 
 .content__list{
-  height: 297px;
-  overflow: scroll;
+  block-size: 297px;
+  overflow: auto;
 }
 
 .content__details{
   height: 100%;
-  width: 399px;
+  width: 100%;
 
 }
 
@@ -75,8 +75,8 @@ ol {
 }
 
 .result__video-container{
-  height: 386px;
-  width: 711px;
+  block-size: 386px;
+  inline-size: 711px;
 }
 
 
@@ -103,8 +103,8 @@ ol {
 }
 
 .content__video-card-thumbnail{
-  width: 194px;
-  height: 103px;
+  min-inline-size: 194px;
+  block-size: 103px;
   margin: 0;
   object-position: center;
   object-fit: cover; 
@@ -124,7 +124,7 @@ ol {
 
 .search-form__fieldset-title{
   color: #FFF;
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -133,7 +133,7 @@ ol {
 
 .title{
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -150,7 +150,7 @@ ol {
 .content__card-link{
   text-decoration: none;
   color: #FFF;
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -159,7 +159,7 @@ ol {
 
 .content__video-card-title{
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -190,7 +190,7 @@ fieldset{
   padding-bottom: 5px;
   color: #FFF;
 
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -229,7 +229,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
 .search-form__label-text{
   color: #FFF;
 
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -251,7 +251,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
 
 .search-form__textfield::placeholder{
   color: rgba(255, 255, 255, 0.70);
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -261,13 +261,13 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
 .button{
   color: #FFF;
   text-align: center;
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 
-  height: 34px;
+  min-block-size: 34px;
   background-color: transparent;
   border: 1px solid #FFF;;
 }
