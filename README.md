@@ -1,1 +1,1 @@
-https://github.com/Mark-Petrov/posmotri_v_okno/tree/main
+https://github.com/Mark-Petrov/posmotri_v_okno
